@@ -1,0 +1,13 @@
+[package]
+name = "bip39_solver"
+version = "0.1.0"
+authors = ["harshveer"]
+edition = "2021"
+
+[dependencies]
+ocl = "0.19.7"  # Updated to the latest available version
+hex = "0.4"  # Updated to the latest version
+rayon = "1.5"  # Updated to the latest version
+reqwest = { version = "0.11", features = ["blocking", "json"] }  # Updated to the latest version
+serde = { version = "1.0", features = ["derive"] }  # Updated to the latest version
+bitcoin-wallet = { git = "https://github.com/rust-bitcoin/rust-wallet.git" }  # Keeping the same as it's a git dependency
